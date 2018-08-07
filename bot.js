@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const chalk = require('chalk');
 const yt = require('ytdl-core');
 const request = require('request');
+client.login(process.env.BOT_TOKEN);
 
 const config = require('./config.json');
 
@@ -15,7 +16,6 @@ let toPlay = true;
 
 let playlist = [];
 
-client.login(config.secret.token);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
