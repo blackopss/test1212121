@@ -15,7 +15,6 @@ let toPlay = true;
 
 let playlist = [];
 
-client.login(config.secret.token);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
