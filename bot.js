@@ -5,7 +5,7 @@ const yt = require('ytdl-core');
 const config = require('./config.json');
 
 
-client.login(config.secret.token);
+client.login(process.env.BOT_TOKEN);
 
 let ownerID = "431150885549113344";
 
