@@ -1,9 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const yt = require('ytdl-core');
-const request = require('request');
 
 const config = require('./config.json');
+
+
 client.login(config.secret.token);
 
 let ownerID = "431150885549113344";
@@ -42,7 +43,7 @@ client.user.setGame(`security`,"http://twitch.tv/S-F")
   console.log('')
 });
 
-client.on('message', (message) => {
+client.on('message', message => {
 
     let args = message.content.split(" ");
     let command = args.shift().slice(config.bot.prefix.length);
