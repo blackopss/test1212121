@@ -43,7 +43,7 @@ client.user.setGame(`security`,"http://twitch.tv/S-F")
   console.log('')
 });
 
-client.on('message', message => {
+client.on('message', (message) => {
 
     let args = message.content.split(" ");
     let command = args.shift().slice(config.bot.prefix.length);
