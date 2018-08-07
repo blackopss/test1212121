@@ -6,6 +6,7 @@ const request = require('request');
 client.login(process.env.BOT_TOKEN);
 
 const config = require('./config.json');
+client.login(config.secret.token);
 
 let ownerID = "402043862480322562";
 
