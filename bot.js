@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const yt = require('ytdl-core');
 const request = require('request');
-client.login(process.env.BOT_TOKEN);
 
 const config = require('./config.json');
 client.login(config.secret.token);
